@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Game21">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="300.0" prefWidth="600.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="28.0" layoutY="50.0" prefHeight="50.0" prefWidth="166.0" text="Computer wins:" textFill="#da0b0b">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="463.0" layoutY="53.0" mnemonicParsing="false" onAction="#start" prefHeight="40.0" prefWidth="100.0" text="Start New Game">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="computerNumWins" layoutX="208.0" layoutY="50.0" prefHeight="50.0" textFill="#e40d0d">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label fx:id="showComputerTotal" alignment="CENTER" layoutX="475.0" prefHeight="150.0" prefWidth="125.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="card2" layoutX="75.0" layoutY="35.0" prefHeight="75.0" prefWidth="350.0" textFill="#212221">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="compWin" layoutX="150.0" layoutY="125.0" prefWidth="300.0" textAlignment="CENTER" textFill="#ee1212">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="59.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+                              <Label fx:id="tempCompNum" layoutX="80.0" layoutY="35.0" prefHeight="75.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="300.0" prefWidth="600.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label fx:id="showPlayerTotal" alignment="CENTER" layoutX="475.0" prefHeight="150.0" prefWidth="125.0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="card1" layoutX="75.0" layoutY="35.0" prefHeight="75.0" prefWidth="350.0" textFill="#212221">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="playerWin" layoutX="150.0" prefWidth="300.0" textAlignment="CENTER" textFill="#19e838">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button layoutX="450.0" layoutY="25.0" mnemonicParsing="false" onAction="#hit" prefHeight="40.0" prefWidth="100.0" text="Hit" />
+                              <Button layoutX="450.0" layoutY="75.0" mnemonicParsing="false" onAction="#stay" prefHeight="40.0" prefWidth="100.0" text="Stay" />
+                              <Label layoutX="28.0" layoutY="50.0" prefHeight="50.0" prefWidth="109.0" text="Your wins:" textFill="#13e83a">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font></Label>
+                              <Label fx:id="playerNumWins" layoutX="145.0" layoutY="50.0" prefHeight="50.0" textFill="#3df814">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
